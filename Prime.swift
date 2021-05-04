@@ -2,7 +2,7 @@
 import Foundation
 
 //Calculates the mod (i.e a^(p-1) % p)
-//Note: (x.y) mod p == ((x mod p).(y mod p)) mod p
+//Note: (x.y) mod p == ((x mod p).(y mod p)) mod p && a % m == a for all a < m
 //Completes in O(log N) time
 func powmod(_ a: Int, _ x: Int, _ m: Int) -> Int { // O(log N)
     //Base Case: exponent is 1 or 2, if 1 return a^1 % m, else a^2 % m
